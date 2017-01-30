@@ -8,8 +8,6 @@ title: Le Wagon Middleman boilerplate
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
   </p>
 </div> -->
-
-html>
   <head>
     <meta charset="utf-8">
     <title>Airbnb home</title>
@@ -46,22 +44,26 @@ html>
     <div class="container text-center padded features">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/globe.png" alt="">
+          <%= image_tag 'globe.png', alt:'globe' %>
+          <!-- <img src="images/globe.png" alt=""> -->
           <h2>Discover the world</h2>
           <p>The earth is your new home.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/dollar.png" alt="">
+          <%= image_tag 'dollar.png', alt:'dollar' %>
+          <!-- <img src="images/dollar.png" alt=""> -->
           <h2>Pay online</h2>
           <p>No cash issues anymore.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/beer.png" alt="">
+          <%= image_tag 'beer.png', alt:'beer' %>
+          <!-- <img src="images/beer.png" alt=""> -->
           <h2>Meet people</h2>
           <p>Discover new culture and lifestyle.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/heart.png" alt="">
+          <%= image_tag 'heart.png', alt:'heart' %>
+          <!-- <img src="images/heart.png" alt=""> -->
           <h2>Share and love</h2>
           <p>Join a community you will love.</p>
         </div>
@@ -78,7 +80,8 @@ html>
                 <h2>Seb's home</h2>
                 <p>Charming room with patio</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/seb.jpg">
+              <%= image_tag "seb.png", class:"card-user avatar avatar-large" %>
+              <!-- <img class="card-user avatar avatar-large" src="images/seb.png"> -->
               <a class="card-link" href="#" ></a>
             </div>
           </div>
@@ -89,7 +92,8 @@ html>
                 <h2>Anne's home</h2>
                 <p>Lovely house</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/anne.jpg">
+              <%= image_tag "anne.png", class:"card-user avatar avatar-large" %>
+              <!-- <img class="card-user avatar avatar-large" src="images/anne.jpg"> -->
               <a class="card-link" href="#" ></a>
             </div>
           </div>
@@ -97,10 +101,11 @@ html>
             <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
               <div class="card-category">London</div>
               <div class="card-description">
-                <h2>Romain's home</h2>
+                <h2>Xuan's home</h2>
                 <p>Nice flat in Piccadilly</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/romain.jpeg">
+              <%= image_tag "xuan.png", class:"card-user avatar avatar-large" %>
+              <!-- <img class="card-user avatar avatar-large" src="images/romain.jpeg"> -->
               <a class="card-link" href="#" ></a>
             </div>
           </div>
